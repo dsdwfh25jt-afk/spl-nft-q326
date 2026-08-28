@@ -7,7 +7,7 @@ import {
 import { irysUploader } from "@metaplex-foundation/umi-uploader-irys";
 import { readFile } from "fs/promises";
 
-import wallet from "../../devnet-wallet.json";
+import wallet from "/mnt/d/GuruPT8bAvseqUTpTEXYs913YgAd3LqvTxK3VPMdJ8u5.json";
 
 const umi = createUmi(
   process.env.SOLANA_RPC_URL ?? "https://api.devnet.solana.com",
@@ -27,13 +27,14 @@ umi.use(signerIdentity(signer));
 (async () => {
   try {
     //chanege image path to your image path
-    const image = await readFile("file-path");
+    const image = await readFile("/mnt/d/spl-nft-q326/src/nft/aditya_kumar.webp");
 
     //change the image name and mime type
-    // const file =
+    // const file = 
+    const file = createGenericFile(image, "aditya_kumar.webp", {contentType: "image/webp",});
 
-    // const [myUri] =
-    // console.log("Your image URI: ", myUri);
+    const [myUri] = await umi.uploader.upload([file]);
+    console.log("Your image URI: ", myUri);  
   } catch (error) {
     console.log(error);
   }
