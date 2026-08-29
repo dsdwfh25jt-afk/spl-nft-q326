@@ -25,14 +25,14 @@ umi.use(signerIdentity(signer));
   try {
     //change the image uri to your image uri obtained from nft_image.ts
     const image =
-      "https://gateway.irys.xyz/7ckSRKuvymiadESYguBL6FL4S9ce9cSAVHypEYjYiV1D";
+      "https://gateway.irys.xyz/2tivLPRKptmbtodGVDp4AS5iqTx1WiMxPX6dQxxpc9kn";
 
     // json scheme : https://www.metaplex.com/docs/smart-contracts/core/json-schema
     //change the metadata
     const metadata = {
-  "name": "Adiya kumar rgba(9, 8, 8, 0.07)",
-  "description": "The Og Aditya kumar from india who used to say 🍆",
-  "image": "https://gateway.irys.xyz/7ckSRKuvymiadESYguBL6FL4S9ce9cSAVHypEYjYiV1D",
+  "name": "Gaurav rgba(0, 0, 0, 0.07)",
+  "description": "The nft represent the some better performance in turbin3 2026 q3 week 01",
+  "image": "https://gateway.irys.xyz/2tivLPRKptmbtodGVDp4AS5iqTx1WiMxPX6dQxxpc9kn",
   "external_url": "https://example.com",
   "attributes": [
     {
@@ -47,8 +47,8 @@ umi.use(signerIdentity(signer));
   "properties": {
     "files": [
       {
-        "uri": "https://gateway.irys.xyz/7ckSRKuvymiadESYguBL6FL4S9ce9cSAVHypEYjYiV1D",
-        "type": "image/webp"
+        "uri": "https://gateway.irys.xyz/2tivLPRKptmbtodGVDp4AS5iqTx1WiMxPX6dQxxpc9kn",
+        "type": "image/jpg"
       },
     ],
     "category": "image"

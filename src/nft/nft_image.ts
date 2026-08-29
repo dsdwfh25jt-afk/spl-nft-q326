@@ -27,11 +27,11 @@ umi.use(signerIdentity(signer));
 (async () => {
   try {
     //chanege image path to your image path
-    const image = await readFile("/mnt/d/spl-nft-q326/src/nft/aditya_kumar.webp");
+    const image = await readFile("/mnt/d/spl-nft-q326/src/nft/image.jpg");
 
     //change the image name and mime type
     // const file = 
-    const file = createGenericFile(image, "aditya_kumar.webp", {contentType: "image/webp",});
+    const file = createGenericFile(image, "Gaurav.jpg", {contentType: "image/jpg",});
 
     const [myUri] = await umi.uploader.upload([file]);
     console.log("Your image URI: ", myUri);  
