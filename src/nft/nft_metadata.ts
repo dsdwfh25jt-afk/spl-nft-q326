@@ -25,29 +25,29 @@ umi.use(signerIdentity(signer));
   try {
     //change the image uri to your image uri obtained from nft_image.ts
     const image =
-      "https://gateway.irys.xyz/2tivLPRKptmbtodGVDp4AS5iqTx1WiMxPX6dQxxpc9kn";
+      "https://gateway.irys.xyz/FdMCNz1AgJH3DghUQse5kq3NcB6DvnYmjcFidHYTkGkw";
 
     // json scheme : https://www.metaplex.com/docs/smart-contracts/core/json-schema
     //change the metadata
     const metadata = {
-  "name": "Gaurav rgba(0, 0, 0, 0.07)",
-  "description": "The nft represent the some better performance in turbin3 2026 q3 week 01",
-  "image": "https://gateway.irys.xyz/2tivLPRKptmbtodGVDp4AS5iqTx1WiMxPX6dQxxpc9kn",
+  "name": "nate",
+  "description": "something like ... ",
+  image,
   "external_url": "https://example.com",
   "attributes": [
     {
-      "trait_type": "trait1",
-      "value": "value1"
+      "trait_type": "color",
+      "value": "green"
     },
     {
-      "trait_type": "trait2",
-      "value": "value2"
+      "trait_type": "name",
+      "value": "nate"
     }
   ],
   "properties": {
     "files": [
       {
-        "uri": "https://gateway.irys.xyz/2tivLPRKptmbtodGVDp4AS5iqTx1WiMxPX6dQxxpc9kn",
+        "uri": "https://gateway.irys.xyz/FdMCNz1AgJH3DghUQse5kq3NcB6DvnYmjcFidHYTkGkw",
         "type": "image/jpg"
       },
     ],

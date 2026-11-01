@@ -22,13 +22,13 @@ umi.use(mplCore());
 (async () => {
   try {
     const metadataUri =
-      "https://gateway.irys.xyz/3y2GjymfdqseoLoXF93znxC5yBvn8Ss1RBASCMD5VKEM";
+      "https://gateway.irys.xyz/GpiHuMMS6EiHwjf4D61xeiXA6cDUk4w1VbKZy8EFjXs8";
     const asset = generateSigner(umi);
 
     //add you nft name and metadata uri
     const tx = await create(umi, {
       asset: asset,
-      name: "Gaurav rgba(0, 0, 0, 0.07)", 
+      name: "nate", 
       uri: metadataUri,
     }).sendAndConfirm(umi);
 
