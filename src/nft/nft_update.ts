@@ -32,9 +32,9 @@ umi.use(mplCore());
     try {
         const Updatedmetadata = {
              
-            "name": "Gaurav #1",
-            "symbol": "GRV",
-            "description": "Sorry for late Lol",
+            "name": "Lol",
+            "symbol": "nft",
+            "description": "fahhh",
         }
         const guir = await umi.uploader.uploadJson(Updatedmetadata);
         console.log("updated metadata uri : ", guir);

@@ -26,11 +26,8 @@ umi.use(signerIdentity(signer));
 
 (async () => {
   try {
-    //chanege image path to your image path
     const image = await readFile("/mnt/d/Q3_26_Builder/spl-nft-q326/src/nft/WhatsApp Image 2026-10-30 at 7.33.50 PM.jpeg");
-
-    //change the image name and mime type
-    // const file = 
+ 
     const file = createGenericFile(image, "turbin3.jpg", {contentType: "image/jpg",});
 
     const [myUri] = await umi.uploader.upload([file]);
